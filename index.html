@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Potfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e445b64f96.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+        <nav>
+            <img src="Images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Service</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-times" onclick="closemenu()"></i> 
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Full Stack Developer</p>
+            <h1>Hi I'm <span>Sahad</span> <br>Zad from Bangalore</h1>
+        </div>
+     </div>
+    </div>
+    <!--------------------About---------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/user.jpeg">
+                </div>
+                <div class="about-col-2">
+                   <h1 class="sub-title">About me</h1>
+                   <p>👋 Hi, I'm Muhammed Sahad KV, a passionate Java Full Stack Developer with a strong foundation in backend and frontend technologies. I hold a BSc in Computer Science from Calicut University and have experience building scalable web applications using Java, Spring Boot, React.js, and MySQL. <br>
+
+                    I enjoy solving real-world problems through code, creating efficient backend solutions, and designing responsive user interfaces. My expertise includes REST API development, database management, and modern frontend frameworks. <br>
+                    
+                    🚀 Let's build something amazing together!</p>
+                
+                   <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links"onclick="opentab('experiance')">Experiance</p>
+                    <p class="tab-links"onclick="opentab('education')">Education</p>
+                   </div>
+                   <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                        <li><span>App Development</span><br>Developing Android/iOS</li>
+                        <li><span>Web Development</span><br>Developing Websites & Web Application</li>
+                    </ul>
+                   </div>
+                   <div class="tab-contents" id="experiance">
+                    <ul>
+                        <li><span>Internship</span><br>JAVA Full Stack Developer</li>
+                        <li><span>App Development</span><br>Developing Android/iOS</li>
+                        <li><span>Web Development</span><br>Developing Websites & Web Application</li>
+                    </ul>
+                   </div>
+                   <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>CALICUT UNIVERSITY</span><br>BSC COMPUTER SCIENCE </li>
+                        <li><span>GVHSS CHIRAKKARA,THALASSERY</span><br>COMPUTER SCIENCE</li>
+                        <li><span>Web Development</span><br>Developing Websites & Web Application</li>
+                    </ul>
+                   </div>
+               </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------------Services---------------- -->
+     <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Eligendi pariatur hic similique quidem unde quae eos dolores
+                         voluptatibus! Vel totam nostrum quaerat labore, </p>
+                          <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>App Development</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Eligendi pariatur hic similique quidem unde quae eos dolores
+                         voluptatibus! Vel totam nostrum quaerat labore, </p>
+                          <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fas fa-app-store"></i>
+                    <h2>Web Development</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Eligendi pariatur hic similique quidem unde quae eos dolores
+                         voluptatibus! Vel totam nostrum quaerat labore, </p>
+                          <a href="#">Learn more</a>
+                </div>
+            </div> 
+        </div>
+     </div>
+     <!-- --------------------portfolio---------------- -->
+      <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="Images/652ec07efbd9a45bcec818e8_shutterstock_1064355815_722739a3b7.avif">
+                    <div class="layer">
+                        <h3>Social media App</h3>
+                        <p>The app connects you yo the talented people around the world.
+                            Download it from play store.</p>
+                            <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/652ec07efbd9a45bcec818e8_shutterstock_1064355815_722739a3b7.avif">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>The app connects you yo the talented people around the world.
+                            Download it from play store.</p>
+                            <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/652ec07efbd9a45bcec818e8_shutterstock_1064355815_722739a3b7.avif">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>The app connects you yo the talented people around the world.
+                            Download it from play store.</p>
+                            <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+      </div>
+
+      <!-- --------Contact-------- -->
+       <div id="Contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> sahadzadkv@gmail.com</p>
+                    <p><i class="fa-duotone fa-solid fa-phone"></i> +91 9746422453</p>
+                    <div class="social-icons">
+                    <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/sahad_zad/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://web.snapchat.com/sahad_zad2021"><i class="fa-brands fa-snapchat"></i></a>
+                    <a href="https://www.linkedin.com/in/muhammed-sahad-k-v/ "><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <a href="Images/MUHAMMED SAHAD KV(1).pdf"  download class="btn btn2">Download Cv</a>
+                </div>
+                <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="Email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+                     </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright <i class="fa-regular fa-copyright"></i> Sahad_zad. Made with <i class="fa-regular fa-heart"></i> by Sitiski_albani  </p>
+        </div>
+       </div>
+
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+        for (var tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for (var tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbz8TcFEGosGy1KR9o4_Yc1s21LsdOvfEDZ1Et9SRhDZ2sm6OibrLkH5l_05547_FtZY/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message Sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+            },5000)
+            form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+      
+</body>
+</html>
